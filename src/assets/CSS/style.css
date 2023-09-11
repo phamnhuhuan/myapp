@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    img{
+      @apply w-full h-auto
+    }
+    input{
+      outline: none;
+      background-color: transparent;
+    }
+    .menu{
+      @apply mr-7 uppercase hover:text-hover-primary transition-all text-primary font-medium cursor-pointer 
+    }
+    .icon_header{
+      @apply pr-4 cursor-pointer hover:opacity-70 transition-all
+    }
+    .icon_menu{
+      @apply h-[42px] w-[42px] bg-list rounded-[50%] flex cursor-pointer text-[18px]
+    }
+    .cate_app + .cate_app{
+      @apply ml-6
+    }
+    .bar.active {
+      @apply translate-x-0 transition-all
+  }
+  .search.active {
+    @apply translate-x-0 transition-all
+}
+.bell.active {
+  @apply translate-x-0 transition-all
+}
+.menu-dropdown:hover{
+  @apply pl-2 transition-all
+}
+.auth_form{
+  @apply border-[1.5px] rounded-[100px] border-primary p-2 flex justify-between items-center
+}
+.detail_tour.active {
+  @apply text-primary shadow-lg rounded-[100px] cursor-pointer bg-list transition-all
+}
+.detail_tour:hover {
+  @apply text-primary shadow-lg rounded-[100px] cursor-pointer  bg-list transition-all
+}
+.btn_send{
+  @apply py-2 px-6 rounded-md text-white
+}
+.content_tab.active{
+  @apply block
+}
+.icon_input{
+  @apply text-primary block mx-2 sm:mx-4
+}
+.send_infor.active_send{
+  @apply block animate-overlay
+}
+.loader{
+  @apply fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-white z-50
+}
+::-webkit-calendar-picker-indicator { 
+  @apply hidden
+ }
+
+}
